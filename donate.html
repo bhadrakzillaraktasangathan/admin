@@ -419,7 +419,7 @@
                 generateUpiLink(amount, name, uniqueId) {
                     const tid = 'AGORA' + Date.now();
                     const transactionNote = `Donation to AgoraNet by (#${uniqueId}) ${encodeURIComponent(name)}`;
-                    return `upi://pay?pa=ThiruXD@ptyes&pn=AgoraNet&am=${amount}&cu=INR&tn=${transactionNote}&tid=${tid}`;
+                    return `upi://pay?pa=rahul4ever@sbi&pn=BZRS%20Trust&am=${amount}&cu=INR&tn=${transactionNote}&tid=${tid}`;
                 }
 
                 // Send donation notification with interactive buttons
@@ -951,7 +951,7 @@
 
             // Copy UPI ID
             copyUpiId.addEventListener('click', () => {
-                navigator.clipboard.writeText('ThiruXD@ptyes')
+                navigator.clipboard.writeText('rahul4ever@sbi')
                     .then(() => {
                         const originalIcon = copyUpiId.innerHTML;
                         copyUpiId.innerHTML = '<i class="fas fa-check"></i>';
