@@ -171,7 +171,7 @@
     <header class="bg-white shadow-md py-4 sticky top-0 z-50">
         <div class="container-max-w flex justify-between items-center relative">
             <a href="index.html" class="flex items-center space-x-2">
-                <img src="https://github.com/bhadrakzillaraktasangathan/admin/blob/main/logo.png" alt="" class="h-10 w-10 rounded-full">
+                <img src="logo.png" alt="" class="h-10 w-10 rounded-full">
                 <span class="text-2xl font-bold text-gray-900">Donation Portal</span>
             </a>
 
@@ -193,11 +193,13 @@
         <section id="donate-form" class="py-16 px-4 bg-white">
             <div class="container-max-w">
                 <h3 class="text-3xl font-bold text-gray-900 text-center mb-8">Bhadrak Zilla Rakta Sangathan Charitable Trust</h3>
-                <p class="text-lg text-gray-700 text-left mb-8">Bank : INDIA POST PAYMENTS BANK</p>
-                <p class="text-lg text-gray-700 text-left mb-8">A/c Holder : PRAVAT SUTAR</p>
-                <p class="text-lg text-gray-700 text-left mb-8">A/c No : 039210120267</p>
-                <p class="text-lg text-gray-700 text-left mb-8">IFSC Code : IPOS0000001</p>
-                <p class="text-lg text-gray-700 text-left mb-8">UPI Id : bzrstrustbdk@nyes</p>
+                <p class="text-lg text-gray-700 text-left mb-8">
+                Bank : INDIA POST PAYMENTS BANK</br>
+                A/c Holder : PRAVAT SUTAR</br>
+                A/c No : 039210120267</br>
+                IFSC Code : IPOS0000001</br>
+                UPI Id : bzrstrustbdk@nyes</br>
+                </p>
 
                 <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-md mx-auto card-shadow">
                     <form id="donationForm" class="space-y-6">
@@ -281,12 +283,12 @@
     <section class="py-16 px-4 bg-white" id="contact">
         <div class="container-max-w">
             <h4 class="text-3xl font-bold text-gray-900 text-center mb-2">ଆପଣଙ୍କ ଦାନ ରାଶିକୁ ସାମାଜିକ ସେବା ଏବଂ ରକ୍ତଦାନ ଶିବିର ପାଇଁ ସଠିକ ଭାବେ ବ୍ୟବହାର କରିବାରେ ଉପଯୋଗୀ ହେବ</h4>
-            <p class="text-lg text-gray-700 text-center mb-2">1. ରକ୍ତଦାନ ଶିବିର ଆୟୋଜନ</p>
-            <p class="text-lg text-gray-700 text-center mb-2">2. ରକ୍ତଦାତାଙ୍କ ପାଇଁ ସୁବିଧା</p>
-            <p class="text-lg text-gray-700 text-center mb-2">3. ଜନଜାଗରଣ କାର୍ଯ୍ୟକ୍ରମ</p>
-            <p class="text-lg text-gray-700 text-center mb-2">4. ଦରିଦ୍ର ଓ ଆବଶ୍ୟକତାମନ୍ଦଙ୍କ ସହାୟତା</p>
-            <p class="text-lg text-gray-700 text-center mb-2">5. ସାମାଜିକ ସେବା କାର୍ଯ୍ୟ</p>
-            <p class="text-lg text-gray-700 text-center mb-2">6. ସଂଗଠନର ପରିଚାଳନା ଖର୍ଚ୍ଚ</p>
+            <p class="text-lg text-gray-700 text-left mb-2">1. ରକ୍ତଦାନ ଶିବିର ଆୟୋଜନ</p>
+            <p class="text-lg text-gray-700 text-left mb-2">2. ରକ୍ତଦାତାଙ୍କ ପାଇଁ ସୁବିଧା</p>
+            <p class="text-lg text-gray-700 text-left mb-2">3. ଜନଜାଗରଣ କାର୍ଯ୍ୟକ୍ରମ</p>
+            <p class="text-lg text-gray-700 text-left mb-2">4. ଦରିଦ୍ର ଓ ଆବଶ୍ୟକତାମନ୍ଦଙ୍କ ସହାୟତା</p>
+            <p class="text-lg text-gray-700 text-left mb-2">5. ସାମାଜିକ ସେବା କାର୍ଯ୍ୟ</p>
+            <p class="text-lg text-gray-700 text-left mb-2">6. ସଂଗଠନର ପରିଚାଳନା ଖର୍ଚ୍ଚ</p>
         </div>
     </section>
 
@@ -435,7 +437,7 @@
 
                 generateUpiLink(amount, name, uniqueId) {
                     const tid = 'AGORA' + Date.now();
-                    const transactionNote = `Donation to AgoraNet by (#${uniqueId}) ${encodeURIComponent(name)}`;
+                    const transactionNote = `Donation to BHADRAK ZILLA RAKTA SANGATHAN by (#${uniqueId}) ${encodeURIComponent(name)}`;
                     return `upi://pay?pa=bzrstrustbdk@nyes&pn=BZRS%20Trust&am=${amount}&cu=INR&tn=${transactionNote}&tid=${tid}`;
                 }
 
